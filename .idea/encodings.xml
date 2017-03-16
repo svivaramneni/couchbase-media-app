@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/public/cors" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/service/Airport.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/service/FlightPath.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/service/User.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/util/CorsFilter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/util/StartupPreparations.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/web/AirportController.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/web/FlightPathController.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/images/web/UserController.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/css" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/img" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/js" charset="windows-1252" />
+  </component>
+</project>

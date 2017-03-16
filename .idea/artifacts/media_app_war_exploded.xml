@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="media-app:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/media_app_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="couchbase-media-app/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="couchbase-media-app" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

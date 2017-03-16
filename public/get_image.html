@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+</head>
+<body>
+<h2>Get Image from Couchbase</h2>
+
+<form id="myForm" method="post" action="#">
+    Enter image ID : <input type="text" id="imageID">
+    <input type="button" value="Get Image" onclick="getImageAjax()">
+</form>
+
+<div class="imageDiv">
+    <h2>Corresponding Image</h2>
+    <img id="img" src="" alt="Red dot" />
+</div>
+
+<br/>
+<br/>
+
+<script>
+
+    $(document).ready(function(){
+        $(".imageDiv").hide();
+    });
+    function getImageAjax(){
+            var imageID = $('#imageID').val();
+            $.ajax({
+                url: '/api/image/v1/image/'+ imageID,
+                type: 'get',
+                cache: false,
+                dataType: 'json',
+                success: displayImage
+            });
+    }
+
+    function displayImage(imageObject) {
+        $(".imageDiv").show();
+        console.log(imageObject);
+        var img = 'data:image/png;base64,'+imageObject.encodedImage;
+        $('#img').attr('src', img);
+    }
+
+</script>
+</body>
+
+</html>
